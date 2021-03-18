@@ -18,6 +18,13 @@ public class Item {
 	@ManyToOne
 	private Library library;
 
+	public Item(Long id, String description, Library library) {
+		super();
+		this.id = id;
+		this.description = description;
+		this.library = library;
+	}
+
 	public Item(Long id, String description) {
 		super();
 		this.id = id;

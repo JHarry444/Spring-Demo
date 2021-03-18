@@ -32,7 +32,7 @@ public class ItemController {
 	}
 
 	@PostMapping("/create")
-	public ResponseEntity<ItemDTO> create(@RequestBody Item item) {
+	public ResponseEntity<ItemDTO> create(@RequestBody ItemDTO item) {
 		return new ResponseEntity<ItemDTO>(this.service.create(item), HttpStatus.CREATED);
 	}
 

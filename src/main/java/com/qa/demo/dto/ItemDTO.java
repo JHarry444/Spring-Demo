@@ -6,14 +6,17 @@ public class ItemDTO {
 
 	private String description;
 
+	private Long libraryId;
+
 	public ItemDTO() {
 		super();
 	}
 
-	public ItemDTO(Long id, String description) {
+	public ItemDTO(Long id, String description, Long libraryId) {
 		super();
 		this.id = id;
 		this.description = description;
+		this.libraryId = libraryId;
 	}
 
 	public Long getId() {
@@ -30,6 +33,14 @@ public class ItemDTO {
 
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	public Long getLibraryId() {
+		return libraryId;
+	}
+
+	public void setLibraryId(Long libraryId) {
+		this.libraryId = libraryId;
 	}
 
 }

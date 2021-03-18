@@ -22,6 +22,11 @@ public class Library {
 	@OneToMany(mappedBy = "library")
 	private Set<Item> items;
 
+	public Library(Long id) {
+		super();
+		this.id = id;
+	}
+
 	public Library(Long id, String name) {
 		super();
 		this.id = id;
